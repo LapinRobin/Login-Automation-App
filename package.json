@@ -1,0 +1,38 @@
+{
+  "name": "loginautomationapp",
+  "version": "1.0.0",
+  "description": "application to automate user login for INSA students",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "test": "jest",
+    "pack": "electron-builder --dir",
+    "build": "electron-builder",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1",
+    "electron": "^24.2.0"
+  },
+  "build": {
+    "appId": "com.loginautomationapp.app",
+    "productName": "Login Automation",
+    "mac": {
+      "identity": null
+    }
+  },
+  "author": "Yikang Su",
+  "license": "MIT",
+  "dependencies": {
+    "electron-i18n": "^1.3136.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-store": "^8.1.0",
+    "keytar": "^7.9.0",
+    "puppeteer": "^20.1.1"
+  }
+}
